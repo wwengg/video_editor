@@ -1,5 +1,5 @@
-import 'package:video_editor/domain/bloc/controller.dart';
-import 'package:video_editor/domain/entities/file_format.dart';
+import 'package:video_editor_2/domain/bloc/controller.dart';
+import 'package:video_editor_2/domain/entities/file_format.dart';
 
 abstract class FFmpegConfig {
   const FFmpegConfig({

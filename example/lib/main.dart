@@ -8,15 +8,16 @@ import 'package:ffmpeg_kit_flutter_min_gpl/statistics.dart';
 import 'package:ffmpeg_wasm/ffmpeg_wasm.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:get_thumbnail_video/index.dart';
 import 'package:helpers/helpers.dart' show OpacityTransition;
 import 'package:image_picker/image_picker.dart';
 import 'package:path/path.dart' as path;
 import 'package:path_provider/path_provider.dart';
-import 'package:video_editor/domain/entities/file_format.dart';
-import 'package:video_editor/video_editor.dart';
+import 'package:video_editor_2/domain/entities/file_format.dart';
+import 'package:video_editor_2/video_editor.dart';
 import 'package:video_editor_example/crop.dart';
 import 'package:video_editor_example/widgets/export_result.dart';
-import 'package:video_thumbnail/video_thumbnail.dart';
+import 'package:get_thumbnail_video/video_thumbnail.dart';
 
 void main() => runApp(
       MaterialApp(

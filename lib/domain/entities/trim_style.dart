@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:video_editor/domain/helpers.dart';
+import 'package:video_editor_2/domain/helpers.dart';
 
 enum TrimSliderEdgesType { bar, circle }
 

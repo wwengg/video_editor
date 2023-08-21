@@ -5,6 +5,7 @@ class CoverData {
     this.thumbData,
     required this.timeMs,
   });
+
   final Uint8List? thumbData;
   final int timeMs;
 

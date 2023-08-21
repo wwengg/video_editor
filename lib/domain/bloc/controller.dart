@@ -3,13 +3,13 @@ import 'dart:io';
 import 'package:cross_file/cross_file.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:video_editor/domain/entities/cover_data.dart';
-import 'package:video_editor/domain/entities/cover_style.dart';
-import 'package:video_editor/domain/entities/crop_style.dart';
-import 'package:video_editor/domain/entities/ffmpeg_config.dart';
-import 'package:video_editor/domain/entities/trim_style.dart';
-import 'package:video_editor/domain/helpers.dart';
-import 'package:video_editor/domain/thumbnails.dart';
+import 'package:video_editor_2/domain/entities/cover_data.dart';
+import 'package:video_editor_2/domain/entities/cover_style.dart';
+import 'package:video_editor_2/domain/entities/crop_style.dart';
+import 'package:video_editor_2/domain/entities/ffmpeg_config.dart';
+import 'package:video_editor_2/domain/entities/trim_style.dart';
+import 'package:video_editor_2/domain/helpers.dart';
+import 'package:video_editor_2/domain/thumbnails.dart';
 import 'package:video_player/video_player.dart';
 
 class VideoMinDurationError implements Exception {
@@ -144,7 +144,9 @@ class VideoEditorController extends ChangeNotifier {
 
   /// Get the [VideoPlayerController.value.size]
   Size get videoDimension => _video.value.size;
+
   double get videoWidth => videoDimension.width;
+
   double get videoHeight => videoDimension.height;
 
   /// The [minTrim] param is the minimum position of the trimmed area on the slider
@@ -190,6 +192,7 @@ class VideoEditorController extends ChangeNotifier {
 
   /// The [preferredCropAspectRatio] param is the selected aspect ratio (9:16, 3:4, 1:1, ...)
   double? get preferredCropAspectRatio => _preferredCropAspectRatio;
+
   set preferredCropAspectRatio(double? value) {
     if (preferredCropAspectRatio == value) return;
     _preferredCropAspectRatio = value;
@@ -376,6 +379,7 @@ class VideoEditorController extends ChangeNotifier {
   ///
   /// `true` if the trimming values are curently getting updated
   bool get isTrimming => _isTrimming;
+
   set isTrimming(bool value) {
     _isTrimming = value;
     if (!value) {

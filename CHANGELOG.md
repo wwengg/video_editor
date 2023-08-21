@@ -1,3 +1,7 @@
+## 3.0.1
+
+- Refactor
+ 
 ## 3.0.0
 
 - [#147](https://github.com/LeGoffMael/video_editor/pull/147) by [@Alberto-Monteiro](https://github.com/Alberto-Monteiro)

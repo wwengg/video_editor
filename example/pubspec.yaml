@@ -1,20 +1,16 @@
 name: video_editor_example
 description: The example project for the video_editor package.
-
+version: 0.0.1
 publish_to: "none"
-version: 2.4.0+1
 
 environment:
-  flutter: ">=3.0.0"
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-
-  video_editor:
+  video_editor_2:
     path: ../
-
   ffmpeg_kit_flutter_min_gpl: ^5.1.0
   fraction: ^4.1.4
   helpers: ^1.1.4
@@ -23,21 +19,13 @@ dependencies:
   video_player: ^2.5.1
   path_provider: ^2.0.12
   cross_file: ^0.3.3+4
-  # TODO(Alberto-Monteiro): remove git path when new package is published
-  video_thumbnail:
-    # path: ../../video_thumbnail/video_thumbnail
-    git:
-      url: https://github.com/Alberto-Monteiro/video_thumbnail.git
-      ref: feat-web_implementation
-      path: video_thumbnail
-  # TODO(Alberto-Monteiro): remove git path when new package is published
+  get_thumbnail_video: ^0.6.0
   ffmpeg_wasm: ^1.0.1
-
-flutter:
-  uses-material-design: true
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
   flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true

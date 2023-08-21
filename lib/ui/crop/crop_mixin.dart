@@ -1,14 +1,14 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:video_editor/domain/bloc/controller.dart';
-import 'package:video_editor/domain/entities/transform_data.dart';
-import 'package:video_editor/domain/helpers.dart';
-import 'package:video_editor/ui/crop/crop_grid.dart';
-import 'package:video_editor/ui/crop/crop_grid_painter.dart';
-import 'package:video_editor/ui/image_viewer.dart';
-import 'package:video_editor/ui/transform.dart';
-import 'package:video_editor/ui/video_viewer.dart';
+import 'package:video_editor_2/domain/bloc/controller.dart';
+import 'package:video_editor_2/domain/entities/transform_data.dart';
+import 'package:video_editor_2/domain/helpers.dart';
+import 'package:video_editor_2/ui/crop/crop_grid.dart';
+import 'package:video_editor_2/ui/crop/crop_grid_painter.dart';
+import 'package:video_editor_2/ui/image_viewer.dart';
+import 'package:video_editor_2/ui/transform.dart';
+import 'package:video_editor_2/ui/video_viewer.dart';
 
 mixin CropPreviewMixin<T extends StatefulWidget> on State<T> {
   final ValueNotifier<Rect> rect = ValueNotifier<Rect>(Rect.zero);

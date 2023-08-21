@@ -2,9 +2,9 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:video_editor/domain/bloc/controller.dart';
-import 'package:video_editor/ui/trim/thumbnail_slider.dart';
-import 'package:video_editor/ui/trim/trim_slider_painter.dart';
+import 'package:video_editor_2/domain/bloc/controller.dart';
+import 'package:video_editor_2/ui/trim/thumbnail_slider.dart';
+import 'package:video_editor_2/ui/trim/trim_slider_painter.dart';
 
 enum _TrimBoundaries { left, right, inside, progress }
 
@@ -100,6 +100,7 @@ class _TrimSliderState extends State<TrimSlider>
   // Edges touch margin come from it size, but minimum is [margin]
   late final _edgesTouchMargin =
       max(widget.controller.trimStyle.edgeWidth, _touchMargin);
+
   // Position line touch margin come from it size, but minimum is [margin]
   late final _positionTouchMargin =
       max(widget.controller.trimStyle.positionLineWidth, _touchMargin);
