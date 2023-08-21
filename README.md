@@ -1,7 +1,7 @@
 # Flutter video editor
 
-[![Pub](https://img.shields.io/pub/v/video_editor.svg)](https://pub.dev/packages/video_editor)
-[![GitHub stars](https://img.shields.io/github/stars/LeGoffMael/video_editor?style=social)](https://github.com/LeGoffMael/video_editor/stargazers)
+[![Pub](https://img.shields.io/pub/v/video_editor_2.svg)](https://pub.dev/packages/video_editor_2)
+[![GitHub stars](https://img.shields.io/github/stars/Alberto-Monteiro/video_editor?style=social)](https://github.com/Alberto-Monteiro/video_editor/stargazers)
 
 A video editor that allows to edit (trim, crop, rotate and scale) and choose a cover with a very flexible UI design.
 
@@ -13,7 +13,7 @@ Following steps will help you add this library as a dependency in your flutter p
 
 ```yaml
 dependencies:
-  video_editor: ^2.4.0
+  video_editor_2: ^3.0.2
 ```
 
 - Import the package in your code:
@@ -50,7 +50,7 @@ void dispose() {
 }
 ```
 
-For more details check out the [example](https://github.com/LeGoffMael/video_editor/tree/master/example).
+For more details check out the [example](https://github.com/Alberto-Monteiro/video_editor/tree/master/example).
 
 ### VideoEditorController
 
@@ -110,7 +110,7 @@ Display the trimmer containing video thumbnails with rotation and crop parameter
 | -------------------------------- | --------------------------------- |
 | required VideoEditorController controller | The `controller` param is mandatory so every change in the controller settings will propagate in the trim slider view |
 | double height = 0.0 | The `height` param specifies the height of the generated thumbnails |
-| double quality = 10 | The `quality` param specifies the quality of the generated thumbnails, from 0 to 100 ([more info](https://pub.dev/packages/video_thumbnail)) |
+| double quality = 10 | The `quality` param specifies the quality of the generated thumbnails, from 0 to 100 ([more info](https://pub.dev/packages/get_thumbnail_video)) |
 | double horizontalMargin = 0.0 | The `horizontalMargin` param specifies the horizontal space to set around the slider. It is important when the trim can be dragged (`controller.maxDuration` < `controller.videoDuration`) |
 | Widget? child | The `child` param can be specify to display a widget below this one (e.g: TrimTimeline) |
 | bool hasHaptic = true | The `hasHaptic` param specifies if haptic feed back can be triggered when the trim touch an edge (left or right) |
@@ -138,7 +138,7 @@ Display a couple of generated covers with rotation and crop parameters to update
 | -------------------------------- | --------------------------------- |
 | required VideoEditorController controller | The `controller` param is mandatory so every change in the controller settings will propagate in the cover selection view |
 | double size = 0.0 | The `size` param specifies the max size of the generated thumbnails |
-| double quality = 10 | The `quality` param specifies the quality of the generated thumbnails, from 0 to 100 ([more info](https://pub.dev/packages/video_thumbnail)) |
+| double quality = 10 | The `quality` param specifies the quality of the generated thumbnails, from 0 to 100 ([more info](https://pub.dev/packages/get_thumbnail_video)) |
 | double horizontalMargin = 0.0 | The `horizontalMargin` param need to be specify when there is a margin outside the crop view, so in case of a change the new layout can be computed properly. |
 | int quantity = 5 | The `quantity` param specifies the quantity of thumbnails to generate |
 | Wrap? wrap | The `wrap` widget to use to customize the thumbnails wrapper |
@@ -558,7 +558,7 @@ Future<void> getMetaData(
 
 </details>
 
-For more details check out the [example](https://github.com/LeGoffMael/video_editor/tree/master/example).
+For more details check out the [example](https://github.com/Alberto-Monteiro/video_editor/tree/master/example).
 
 ## ✨ Credit
 
