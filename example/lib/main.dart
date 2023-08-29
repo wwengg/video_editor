@@ -406,7 +406,7 @@ class _VideoEditorState extends State<VideoEditor> {
           return Padding(
             padding: EdgeInsets.symmetric(horizontal: height / 4),
             child: Row(children: [
-              Text(formatter(Duration(seconds: pos.toInt()))),
+              if (pos.isFinite) Text(formatter(Duration(seconds: pos.toInt()))),
               const Expanded(child: SizedBox()),
               OpacityTransition(
                 visible: _controller.isTrimming,
