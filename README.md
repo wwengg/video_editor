@@ -13,7 +13,7 @@ Following steps will help you add this library as a dependency in your flutter p
 
 ```yaml
 dependencies:
-  video_editor_2: ^3.0.2
+  video_editor_2: ^3.1.0
 ```
 
 - Import the package in your code:
@@ -211,7 +211,7 @@ You can create your own CoverStyle class to customize the CoverSelection apparea
 
 ## ✂ How to export video / cover images?
 
-Since version `3.0.0`, you have complete control over the video / cover image export process. The `VideoEditorController`'s new methods, `createVideoFFmpegConfig` and `createCoverFFmpegConfig`, allow you to create your own ffmpeg configurations and export commands. This means that you can now choose your preferred ffmpeg library for iOS / Android, such as `ffmpeg_kit_flutter_min`, `ffmpeg_kit_flutter_min_gpl`, `ffmpeg_kit_flutter_full_gpl`, or `ffmpeg_kit_flutter_full`. For web platforms, you can choose `ffmpeg_wasm`. Alternatively, you can choose not to include any ffmpeg package to minimize your app's size, and instead delegate the exportation task to a webservice by passing the ffmpeg command to it.
+Since version `3.1.0`, you have complete control over the video / cover image export process. The `VideoEditorController`'s new methods, `createVideoFFmpegConfig` and `createCoverFFmpegConfig`, allow you to create your own ffmpeg configurations and export commands. This means that you can now choose your preferred ffmpeg library for iOS / Android, such as `ffmpeg_kit_flutter_min`, `ffmpeg_kit_flutter_min_gpl`, `ffmpeg_kit_flutter_full_gpl`, or `ffmpeg_kit_flutter_full`. For web platforms, you can choose `ffmpeg_wasm`. Alternatively, you can choose not to include any ffmpeg package to minimize your app's size, and instead delegate the exportation task to a webservice by passing the ffmpeg command to it.
 
 <details>
   <summary>Example of how to run ffmpeg command with the `ffmpeg_kit` / `ffmpeg_wasm` package</summary>
