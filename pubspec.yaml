@@ -2,12 +2,12 @@ name: video_editor_2
 description: |
   A flutter package for editing video with fully customizable UI.
   Supports crop, trim, rotation and cover selection.
-version: 3.1.0
+version: 3.1.1
 repository: https://github.com/Alberto-Monteiro/video_editor
 homepage:
 
 environment:
-  sdk: ^3.5.1
+  sdk: ^3.4.3
   flutter: ">=1.17.0"
 
 dependencies:
